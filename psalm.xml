@@ -4,7 +4,10 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns="https://getpsalm.org/schema/config"
         xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+        findUnusedBaselineEntry="false"
+        findUnusedCode="false"
         phpVersion="8.3"
+        ensureOverrideAttribute="false"
 >
     <projectFiles>
         <directory name="src"/>
@@ -12,4 +15,12 @@
             <directory name="vendor"/>
         </ignoreFiles>
     </projectFiles>
+
+    <issueHandlers>
+        <ClassMustBeFinal>
+            <errorLevel type="suppress">
+                <directory name="src" />
+            </errorLevel>
+        </ClassMustBeFinal>
+    </issueHandlers>
 </psalm>

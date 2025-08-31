@@ -1,0 +1,44 @@
+{
+    "name": "grmvoid/basalt-value-object",
+    "description": "A set of value objects",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "basalt",
+        "vo",
+        "value object"
+    ],
+    "authors": [
+        {
+            "name": "Dominik Szamburski",
+            "email": "dominikszamburski99@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/grmvoid/basalt-value-object",
+    "require": {
+        "php": "~8.3.0 || ~8.4.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "dev-master",
+        "phpstan/phpstan": "^2.1",
+        "phpstan/phpstan-deprecation-rules": "^2.0",
+        "phpstan/phpstan-phpunit": "^2.0",
+        "phpstan/phpstan-strict-rules": "^2.0",
+        "phpunit/phpunit": "^12.3.x-dev",
+        "vimeo/psalm": "^7.0@dev"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Basalt\\ValueObject\\": "src/"
+        }
+    },
+    "config": {
+        "audit": {
+            "abandoned": "report"
+        },
+        "optimize-autoloader": true,
+        "process-timeout": 7200,
+        "sort-packages": true
+    }
+}

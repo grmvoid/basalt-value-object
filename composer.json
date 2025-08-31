@@ -33,6 +33,11 @@
             "Basalt\\ValueObject\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "BasaltTests\\ValueObject\\Unit\\": "tests/"
+        }
+    },
     "config": {
         "audit": {
             "abandoned": "report"

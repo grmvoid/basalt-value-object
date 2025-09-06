@@ -93,4 +93,19 @@ final class UuidTest extends TestCase
         $this->expectException(\InvalidArgumentException::class);
         Uuid::fromBytes('short');
     }
+
+    public function testGenerateReturnsValidUuid(): void
+    {
+        $uuid = Uuid::generate();
+
+        self::assertTrue(\Ramsey\Uuid\Uuid::isValid($uuid->value()));
+    }
+
+    public function testGenerateProducesUniqueUuids(): void
+    {
+        $uuid1 = Uuid::generate();
+        $uuid2 = Uuid::generate();
+
+        self::assertNotSame($uuid1->value(), $uuid2->value());
+    }
 }

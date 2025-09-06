@@ -25,6 +25,11 @@ readonly class Uuid implements \Stringable
         $this->validate();
     }
 
+    public static function generate(): static
+    {
+        return new static(\Ramsey\Uuid\Uuid::uuid4()->toString());
+    }
+
     /**
      * @param non-empty-string $value
      */

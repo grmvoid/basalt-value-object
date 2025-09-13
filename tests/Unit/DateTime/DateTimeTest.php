@@ -15,7 +15,6 @@ namespace BasaltTests\ValueObject\Unit\Unit\DateTime;
 
 use Basalt\ValueObject\DateTime\DateTime;
 use PHPUnit\Framework\Attributes\CoversClass;
-use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 
 #[CoversClass(DateTime::class)]

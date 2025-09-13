@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="dev-master@cdceda044f0255e4eb1da0557ff1479e6d317e01">
+  <file src="src/Person/Firstname.php">
+    <MixedArgument>
+      <code><![CDATA[static::MAX_LENGTH]]></code>
+    </MixedArgument>
+  </file>
+  <file src="src/Person/Lastname.php">
+    <MixedArgument>
+      <code><![CDATA[static::MAX_LENGTH]]></code>
+    </MixedArgument>
+  </file>
+</files>
